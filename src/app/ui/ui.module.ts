@@ -15,27 +15,25 @@ import {RouterModule} from "@angular/router";
 
 // Services
 import {ContractService} from "../services/contract/contract.service";
-import {ThreeBox} from "../services/3box.service"
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    TransactionComponent,
-    ErrorComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(UiRoute),
-    AppMaterialModule,
-    ReactiveFormsModule
-  ],
-  exports: [
-    HomeComponent
-  ],
-  providers: [
-    ContractService,
-    ThreeBox
-  ],
+    declarations: [
+        HomeComponent,
+        TransactionComponent,
+        ErrorComponent
+    ],
+    imports: [
+        CommonModule,
+        RouterModule.forChild(UiRoute),
+        AppMaterialModule,
+        ReactiveFormsModule
+    ],
+    exports: [
+        HomeComponent
+    ],
+    providers: [
+        ContractService,
+    ],
 })
 export class UiModule {
 }

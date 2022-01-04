@@ -8,18 +8,18 @@ import {AppRoutingModule} from './app-routing.module';
 import {UiModule} from "./ui/ui.module";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    AppRoutingModule,
-    AppMaterialModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    UiModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        AppRoutingModule,
+        AppMaterialModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        UiModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

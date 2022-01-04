@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angulartruffledapp": {
+    "dapptemplate": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
             "customWebpackConfig": {
                 "path": "./custom-webpack.config.js"
              },
-            "outputPath": "dist/angulartruffledapp",
+            "outputPath": "dist/dapptemplate",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "angulartruffledapp:build"
+            "browserTarget": "dapptemplate:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angulartruffledapp:build:production"
+              "browserTarget": "dapptemplate:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angulartruffledapp:build"
+            "browserTarget": "dapptemplate:build"
           }
         },
         "test": {
@@ -121,16 +121,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angulartruffledapp:serve"
+            "devServerTarget": "dapptemplate:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angulartruffledapp:serve:production"
+              "devServerTarget": "dapptemplate:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angulartruffledapp"
+  "defaultProject": "dapptemplate"
 }

@@ -1,4 +1,4 @@
 export default interface AccountModel {
-  address: string;
-  balance: number;
+    address: string;
+    balance: number;
 }
