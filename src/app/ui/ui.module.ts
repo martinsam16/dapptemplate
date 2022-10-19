@@ -4,8 +4,6 @@ import {ReactiveFormsModule} from '@angular/forms';
 
 
 // Components
-import {HomeComponent} from './home/home.component';
-import {TransactionComponent} from './transaction/transaction.component';
 import {ErrorComponent} from './error/error.component';
 import {AppMaterialModule} from "../app-material.module";
 
@@ -14,12 +12,10 @@ import {UiRoute} from "./ui.routes";
 import {RouterModule} from "@angular/router";
 
 // Services
-import {ContractService} from "../services/contract/contract.service";
+import {Web3Service} from "../services/web3/web3.service";
 
 @NgModule({
     declarations: [
-        HomeComponent,
-        TransactionComponent,
         ErrorComponent
     ],
     imports: [
@@ -29,10 +25,9 @@ import {ContractService} from "../services/contract/contract.service";
         ReactiveFormsModule
     ],
     exports: [
-        HomeComponent
     ],
     providers: [
-        ContractService,
+        Web3Service,
     ],
 })
 export class UiModule {
