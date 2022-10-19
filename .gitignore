@@ -46,5 +46,4 @@ testem.log
 .DS_Store
 Thumbs.db
 .github
-CODE_OF_CONDUCT.md
-CONTRIBUTING.md
+/.angular/
