@@ -5,7 +5,9 @@ Truffle + Solidity + Angular 13
 # Add to tsconfig.json
 
 "compilerOptions": {
-    "paths":{
+  "resolveJsonModule": true,
+  "esModuleInterop": true,  
+  "paths":{
       "crypto": ["./node_modules/crypto-browserify"],
       "stream": ["./node_modules/stream-browserify"],
       "assert": ["./node_modules/assert"],
