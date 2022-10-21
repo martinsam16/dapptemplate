@@ -48,7 +48,8 @@
         }
       ],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [],
@@ -61,7 +62,8 @@
         }
       ],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address payable\",\"name\":\"_destinoTransferencia\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_origenTransferencia\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"montoTransferencia\",\"type\":\"uint256\"}],\"name\":\"TransferirMonto\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"_destinoTransferencia\",\"type\":\"address\"}],\"name\":\"nuevaTransaccion\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"verBalanceCuenta\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Payment.sol\":\"Payment\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Payment.sol\":{\"keccak256\":\"0x4f0b638bf2d20accc57cf324b21109f90df98b3d21f0dd54cf0f6a2d482e7162\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b9f9ccdb63997079763bbe45245158b31afe7c0ec22bce765e55b6d0a5e7e40d\",\"dweb:/ipfs/QmTSNPcqUHiN8q2EisJ7aGumnsr2Uto66MGJtiXVWMgtrA\"]}},\"version\":1}",
@@ -2270,9 +2272,17 @@
     "name": "solc",
     "version": "0.8.11+commit.d7f03943.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x60DC1757d52438Eb0A6Cf04347E43CA3aB9ea4d7",
+      "transactionHash": "0x85910b2bbeba18bb7fc403aeae1aaec76c99155cbcb9e7131d7e94046d7294cf"
+    }
+  },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-10-19T11:14:52.957Z",
+  "updatedAt": "2022-10-21T19:23:39.533Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
